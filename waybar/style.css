@@ -1,0 +1,148 @@
+@import "rose-pine.css";
+
+* {
+    font-family: 'FiraCode';
+    font-size: 14px;
+}
+
+#language {
+    font-family: "JoyPixels";
+}
+
+#clock,
+#battery,
+#cpu,
+#backlight,
+#pulseaudio,
+#tray,
+#language,
+#workspaces,
+#network,
+#custom-sep,
+#custom-playerctl,
+#custom-launchpad {
+    background-color: @background;
+    font-weight: bolder;
+    color: @default-text;
+    border-radius: 8px;
+    border: 2px solid @border;
+    margin-top: 5px;
+}
+
+#custom-playerctl {
+    margin-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#battery {
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#language,
+#cpu,
+#backlight,
+#pulseaudio,
+#custom-sep {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#network {
+    margin-right: 12px;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+}
+
+#custom-sep {
+    color: @border;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces {
+    padding-right: 2px;
+}
+
+#workspaces button {
+    color: @workspace-dead;
+    border: 0;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active{
+    color: @default-text;
+}
+
+#workspaces button:hover {
+    box-shadow: #161320 0 0 0 0px;
+    background: #101317;
+    text-shadow: #e2e0ec 0 0 0px;
+}
+
+#clock label {
+    font-weight:  bolder;
+    font-size: 20px;
+}
+
+#clock,
+#custom-launchpad {
+    margin-left: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 21px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+#battery.charging {
+    color: #ECE0A8;
+}
+
+#battery {
+    color: #AAC5A0;
+}
+
+#battery.warning:not(.charging) {
+    color: #ECE0A8;
+}
+
+#battery.critical:not(.charging) {
+    color: #E97193;
+}
+
+#cpu {
+    font-weight: bolder;
+    color:#DFA7E7;
+}
+
+#backlight {
+    color: #A8E5E6;
+}
+
+#pulseaudio {
+    color: #7ab0df;
+    font-weight: bolder;
+}
+
+#pulseaudio.muted {
+    color: #E97193;
+}
+
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25px;
+}

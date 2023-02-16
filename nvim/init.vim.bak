@@ -1,0 +1,58 @@
+set clipboard+=unnamedplus
+set nocompatible            " disable compatibility to old-time vi
+set showmatch               " show matching 
+set ignorecase              " case insensitive 
+set mouse=v                 " middle-click paste with 
+set hlsearch                " highlight search 
+set incsearch               " incremental search
+set tabstop=4               " number of columns occupied by a tab 
+set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set expandtab               " converts tabs to white space
+set shiftwidth=4            " width for autoindents
+set autoindent              " indent a new line the same amount as the line just typed
+set number                  " add line numbers
+set wildmode=longest,list   " get bash-like tab completions
+set tw=0                    " turn of hardwrap
+set wrap linebreak          " turn on softwrap
+filetype plugin indent on   "allow auto-indenting depending on file type
+syntax on                   " syntax highlighting
+set mouse=a                 " enable mouse click
+filetype plugin on
+set cursorline              " highlight current cursorline
+set clipboard+=unnamedplus
+set updatetime=300
+set signcolumn=yes
+
+call plug#begin("~/.vim/plugged")
+ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+ Plug 'mhinz/vim-startify'
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'scrooloose/nerdtree'
+ Plug 'preservim/nerdcommenter'
+ Plug 'tpope/vim-fugitive'
+ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+call plug#end()
+
+colorscheme tokyonight-night
+
+if exists("g:neovide")
+   let g:neovide_fullscreen = v:true
+endif
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>".
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+noremap t j
+noremap T J
+noremap n k
+noremap N K
+noremap s l
+noremap S L
