@@ -1,9 +1,6 @@
-require("sanjay.core.options")
-require("sanjay.core.variables")
-require("sanjay.core.colorscheme")
-require("sanjay.core.keymaps")
-require("sanjay.plugins-setup")
-require("sanjay.plugins.nvim-tree")
-require("sanjay.plugins.lualine")
-require("sanjay.plugins.nvim-cmp")
-require("sanjay.plugins.mason-lsp")
+-- core functionality 
+require ("core.keymap")
+require ("core.options")
+
+-- plugins
+require ("plugins.packer")
