@@ -3,6 +3,8 @@ return require('packer').startup(function(use)
 	use { 'wbthomason/packer.nvim' }
 	-- fuzzy finding
 	use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' }
+   -- file explorer
+   use { 'nvim-telescope/telescope-file-browser.nvim', requires = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' } }
 	-- theme
 	use { 'rose-pine/neovim', as = 'rose-pine' }
 	-- treesitter
@@ -10,13 +12,11 @@ return require('packer').startup(function(use)
 	-- undo tree
 	use { 'mbbill/undotree' }
    -- startup screen
-   use { 'mhinz/vim-startify' }
+   use { 'startup-nvim/startup.nvim', requires = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' } }
    -- statusline
    use { 'nvim-lualine/lualine.nvim' }
 	-- git helper
 	use { 'tpope/vim-fugitive' }
-	-- file explorer
-	use { 'preservim/nerdtree', requires = { 'ryanoasis/vim-devicons', 'Xuyuanp/nerdtree-git-plugin' } }
 	-- lsp
 	use { 'VonHeikemen/lsp-zero.nvim', requires = {
 		{ 'neovim/nvim-lspconfig' },
