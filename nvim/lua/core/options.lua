@@ -7,6 +7,7 @@ vim.opt.tabstop = 3
 vim.opt.shiftwidth = 3
 vim.opt.expandtab = true
 vim.opt.autoindent = true
+vim.opt.breakindent = true
 
 -- line wrapping
 vim.opt.wrap = true
