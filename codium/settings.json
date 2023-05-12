@@ -1,0 +1,41 @@
+{
+    // use correct keyboard layout for xkb compatability
+    "keyboard.dispatch": "keyCode",
+
+    // looks
+    "workbench.colorTheme": "Rosé Pine",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
+
+    // git
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // neovim integration
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+
+    // random settings collection (self explanatory)
+    "explorer.confirmDragAndDrop": false,
+    "editor.lineNumbers": "relative",
+    "window.menuBarVisibility": "toggle",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.startupEditor": "none",
+    "files.trimTrailingWhitespace": true,
+
+    // markdown setup
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "markdown.preview.breaks": true,
+}
