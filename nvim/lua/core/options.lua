@@ -1,3 +1,6 @@
+-- map leader key
+vim.g.mapleader = " "
+
 -- line numbering
 vim.opt.number = true
 vim.opt.relativenumber = true
