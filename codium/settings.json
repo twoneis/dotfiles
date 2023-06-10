@@ -9,21 +9,24 @@
     // git
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
 
     // neovim integration
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/vscode-nvim/init.lua",
 
     // random settings collection (self explanatory)
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "none",
     "window.menuBarVisibility": "toggle",
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.startupEditor": "none",
-    "files.trimTrailingWhitespace": true,
 
     // markdown setup
     "[markdown]": {
