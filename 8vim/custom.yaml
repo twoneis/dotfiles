@@ -1,0 +1,12 @@
+layers:
+  hidden:
+  default:
+    sectors:
+      right:
+        parts:
+          bottom:
+            - lower_case: n
+            - lower_case: m
+            - lower_case: f
+            - lower_case: "!"
+          
