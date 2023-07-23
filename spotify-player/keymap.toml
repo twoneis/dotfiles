@@ -1,0 +1,33 @@
+[[keymaps]]
+command = "SwitchDevice"
+key_sequence = "d"
+[[keymaps]]
+command = "ResumePause"
+key_sequence = "p"
+[[keymaps]]
+command = "NextTrack"
+key_sequence = ")"
+[[keymaps]]
+command = "PreviousTrack"
+key_sequence = "("
+[[keymaps]]
+command = "SelectNextOrScrollDown"
+key_sequence = "n"
+[[keymaps]]
+command = "SelectPreviousOrScrollUp"
+key_sequence = "t"
+[[keymaps]]
+command = "ChooseSelected"
+key_sequence = "space"
+[[keymaps]]
+command = "AddSelectedItemToQueue"
+key_sequence = "y"
+[[keymaps]]
+command = "Queue"
+key_sequence = "Y"
+[[keymaps]]
+command = "FocusNextWindow"
+key_sequence = "s"
+[[keymaps]]
+command = "FocusPreviousWindow"
+key_sequence = "h"

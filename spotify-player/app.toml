@@ -1,0 +1,19 @@
+client_id = "10455a5ec3ba469c972ef5aa0e66e825"
+client_port = 8888
+theme = "default"
+playback_format = "{track} • {artists}\n{album}\n{metadata}"
+copy_command = { command = "wl-copy", args = ["-p"] } # linux
+app_refresh_duration_in_ms = 32
+playback_refresh_duration_in_ms = 0
+page_size_in_rows = 20
+track_table_item_max_len = 32
+enable_media_control = false
+enable_streaming = false
+default_device = "void-daemon"
+play_icon = "󱖒"
+pause_icon = "󱖑"
+liked_icon = "󰥲"
+playback_window_position = "Bottom"
+playback_window_width = 6
+border_type = "Rounded"
+progress_bar_type = "Line"
