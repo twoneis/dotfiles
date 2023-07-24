@@ -1,0 +1,22 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+# sudoedit settings
+EDITOR=nvim
+VISUAL=nvim
+SUDO_EDITOR=nvim
+
+# wayland application settings
+MOZ_ENABLE_WAYLAND=1
+QT_QPA_PLATFORM=wayland-egl
+ELM_DISPLAY=wl
+SDL_VIDEODRIVER=wayland
+
+# theme settings
+GTK_THEME=Adwaita:dark
+
+# scaling (for steam)
+GDK_SCALE=1
