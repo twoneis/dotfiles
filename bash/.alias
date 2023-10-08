@@ -1,0 +1,8 @@
+# .alias
+
+alias ll='ls --color=auto -al'
+alias ls='ls --color=auto'
+
+alias hx='helix'
+alias db='distrobox'
+alias lo='nohup flatpak run org.gnome.Loupe'
