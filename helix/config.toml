@@ -2,11 +2,19 @@ theme = "rosepine"
 
 [editor]
 line-number = "relative"
+cursorline = true
+auto-format = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.whitespace]
+render = "all"
+
+[editor.soft-wrap]
+enable = true
 
 [keys.normal]
 h = "move_char_left"
